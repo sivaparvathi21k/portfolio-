@@ -14,13 +14,21 @@
 }
     
 body{
-    
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family:'Poppins',sans-serif;
+    color:#fff;
+    line-height:1.7;
 
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 img{
@@ -70,7 +78,7 @@ section{
     content:"";
     width:90px;
     height:4px;
-    background:var(--primary);
+   background:var(--primary);
     display:block;
     margin:12px auto;
     border-radius:20px;
@@ -109,7 +117,7 @@ section{
     left:0;
     width:100%;
     padding:20px 10%;
-    background:rgba(15,23,42,.95);
+    background:rgba(0,0,0,.45);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -491,11 +499,10 @@ section{
 ==================================*/
 
 footer{
-    background:#09111f;
+    background:transparent;
     text-align:center;
     padding:50px 10%;
 }
-
 footer h2{
     color:var(--primary);
     margin-bottom:10px;
@@ -636,4 +643,7 @@ footer p{
         height:180px;
     }
 
+}
+section{
+    background:transparent;
 }
